@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00065e01-6760-4b7f-b64f-7a8a84cf14dc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/migrations/0002_auto_20180910_1102.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/base.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resturant_locator/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/resturant_locator/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,69 +35,53 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="33" />
+          <entry key="py" value="41" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="33" />
+          <entry key="Python" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1899" />
-          <entry key="txt" value="27" />
+          <entry key="py" value="2500" />
+          <entry key="txt" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="27" />
-          <entry key="Python" value="1899" />
+          <entry key="PLAIN_TEXT" value="52" />
+          <entry key="Python" value="2500" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/accounts/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="77" column="24" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
+            <state relative-caret-position="207">
+              <caret line="119" column="44" lean-forward="true" selection-start-line="119" selection-start-column="44" selection-end-line="119" selection-end-column="44" />
               <folding>
-                <element signature="e#0#33#0" expanded="true" />
-                <marker date="1536581128330" expanded="true" signature="2745:3371" ph="..." />
-                <marker date="1536581128330" expanded="true" signature="3471:3476" ph="..." />
+                <element signature="e#0#11#0" expanded="true" />
+                <marker date="1536602269604" expanded="true" signature="2926:3552" ph="..." />
+                <marker date="1536602269604" expanded="true" signature="3652:3657" ph="..." />
+                <marker date="1536602269604" expanded="true" signature="4366:4551" ph="..." />
+                <marker date="1536602269604" expanded="true" signature="4638:4643" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/util.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/constants/api_mandatory_field_lists.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="6" selection-start-column="6" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/accounts/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+            <state relative-caret-position="120">
+              <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -99,21 +90,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resturant_locator/settings.py">
+        <entry file="file://$PROJECT_DIR$/app/accounts/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+            <state relative-caret-position="75">
+              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+                <marker date="1536582329814" expanded="true" signature="118:123" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resturant_locator/urls.py">
+        <entry file="file://$PROJECT_DIR$/common/util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+            <state relative-caret-position="1065">
+              <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resturant_locator/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="187" column="34" selection-start-line="187" selection-start-column="31" selection-end-line="187" selection-end-column="34" />
               <folding>
-                <element signature="e#651#683#0" expanded="true" />
+                <element signature="e#318#333#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,21 +126,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements/base.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="19" selection-end-line="2" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/accounts/serializers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-                <marker date="1536578042638" expanded="true" signature="118:123" ph="..." />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -144,8 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/accounts/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+            <state relative-caret-position="270">
+              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -161,6 +152,9 @@
       <find>api</find>
       <find>get</find>
       <find>user</find>
+      <find>account_</find>
+      <find>update_user</find>
+      <find>rest_fr</find>
     </findStrings>
     <replaceStrings>
       <replace>apicreator</replace>
@@ -173,15 +167,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/manage.py" />
-        <option value="$PROJECT_DIR$/requirements/base.txt" />
         <option value="$PROJECT_DIR$/app/accounts/admin.py" />
         <option value="$PROJECT_DIR$/constants/api_mandatory_field_lists.py" />
-        <option value="$PROJECT_DIR$/app/accounts/models.py" />
         <option value="$PROJECT_DIR$/resturant_locator/urls.py" />
-        <option value="$PROJECT_DIR$/resturant_locator/settings.py" />
+        <option value="$PROJECT_DIR$/requirements/base.txt" />
         <option value="$PROJECT_DIR$/app/accounts/serializers.py" />
-        <option value="$PROJECT_DIR$/app/accounts/urls.py" />
+        <option value="$PROJECT_DIR$/common/util.py" />
+        <option value="$PROJECT_DIR$/resturant_locator/settings.py" />
+        <option value="$PROJECT_DIR$/app/accounts/models.py" />
         <option value="$PROJECT_DIR$/app/accounts/views.py" />
+        <option value="$PROJECT_DIR$/app/accounts/urls.py" />
       </list>
     </option>
   </component>
@@ -221,7 +216,20 @@
             <path>
               <item name="resturant_locator" type="b2602c69:ProjectViewProjectNode" />
               <item name="resturant_locator" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="resturant_locator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="resturant_locator" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="resturant_locator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="resturant_locator" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="resturant_locator" type="b2602c69:ProjectViewProjectNode" />
@@ -287,6 +295,33 @@
               <item name="contrib" type="462c0819:PsiDirectoryNode" />
               <item name="auth" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="resturant_locator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (hotel) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="python3.6" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="resturant_locator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (hotel) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="python3.6" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="handlers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="resturant_locator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (hotel) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="python3.6" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="rest_framework_jwt" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -295,6 +330,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="rest_framework_jwt.utils.jwt_encode_handler&#9;null&#9;null&#10;rest_framework_jwt.utils.jwt_payload_handler&#9;null&#9;null&#10;JWT_PAYLOAD_HANDLER&#9;null&#9;null" />
     <property name="last_opened_file_path" value="$USER_HOME$/Blog" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -332,7 +368,7 @@
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20611285" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20611285" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -343,7 +379,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4992163" visible="true" weight="0.25170067" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4992163" visible="true" weight="0.25170067" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007837" side_tool="true" weight="0.4387755" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32993197" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -372,19 +408,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/constants/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/common/authentication/authentication.py" />
     <entry file="file://$PROJECT_DIR$/app/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/constants/constants.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/hotel/lib/python3.6/site-packages/django/contrib/auth/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="146" column="8" selection-start-line="146" selection-start-column="8" selection-end-line="146" selection-end-column="8" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resturant_locator/urls.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -396,51 +424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements/base.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="19" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resturant_locator/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/accounts/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/accounts/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <marker date="1536578042638" expanded="true" signature="118:123" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/accounts/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/constants/api_mandatory_field_lists.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -448,21 +431,106 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/hotel/lib/python3.6/site-packages/django/contrib/auth/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="327" column="30" selection-start-line="327" selection-start-column="22" selection-end-line="327" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/hotel/lib/python3.6/site-packages/rest_framework_jwt/compat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/hotel/lib/python3.6/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/accounts/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <marker date="1536582329814" expanded="true" signature="118:123" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/hotel/lib/python3.6/site-packages/rest_framework_jwt/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="84" column="40" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/authentication/authentication.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        <state relative-caret-position="1065">
+          <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements/base.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/accounts/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resturant_locator/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="187" column="34" selection-start-line="187" selection-start-column="31" selection-end-line="187" selection-end-column="34" />
+          <folding>
+            <element signature="e#318#333#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/accounts/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="77" column="24" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
+        <state relative-caret-position="207">
+          <caret line="119" column="44" lean-forward="true" selection-start-line="119" selection-start-column="44" selection-end-line="119" selection-end-column="44" />
           <folding>
-            <element signature="e#0#33#0" expanded="true" />
-            <marker date="1536581128330" expanded="true" signature="2745:3371" ph="..." />
-            <marker date="1536581128330" expanded="true" signature="3471:3476" ph="..." />
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1536602269604" expanded="true" signature="2926:3552" ph="..." />
+            <marker date="1536602269604" expanded="true" signature="3652:3657" ph="..." />
+            <marker date="1536602269604" expanded="true" signature="4366:4551" ph="..." />
+            <marker date="1536602269604" expanded="true" signature="4638:4643" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/accounts/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>

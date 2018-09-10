@@ -1,11 +1,12 @@
+import uuid
 from rest_framework import status
 from rest_framework.decorators import api_view, permission_classes, authentication_classes
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
-
 from app.accounts.models import User
 from app.accounts.serializers import UserSerializer
-from common.util import is_missing_param_in_request, is_empty
+from common.authentication.authentication import JWTAuthentication
+from common.util import is_missing_param_in_request, is_empty, get_jwt
 from constants import constants
 from constants.api_mandatory_field_lists import APIMandatoryFieldList
 
@@ -37,6 +38,7 @@ def update_user(data):
         'first_name': data['first_name'] if not is_empty(dict=data, key='first_name') else user.first_name,
         'last_name': data['last_name'] if not is_empty(dict=data, key='last_name') else user.last_name,
         'email': data['email'] if not is_empty(dict=data, key='email') else user.email,
+        'username': data['email'] if not is_empty(dict=data, key='email') else user.username,
         'password': data['password'] if not is_empty(dict=data, key='password') else user.password,
     }
     user_serializer = UserSerializer(user, data = user_serializer_data)
@@ -96,7 +98,26 @@ def login(request):
     print(is_valid_request)
     if not is_valid_request:
         return  Response({'status': constants.API_ERROR, 'message' : message}, status = status.HTTP_400_BAD_REQUEST)
-    return Response({'status' : constants.API_SUCCESS, 'message' : 'logged in successfully'}, status= status.HTTP_200_OK)
 
+    user = User.objects.get(email=data['email'])
+    user.jwt_secret = uuid.uuid4()
+    user.save()
+    print(1)
+    jwt = str(get_jwt(request=request, user=user))
+    print(jwt)
+    data = {'user_id': user.user_id, 'jwt': jwt}
+    return Response({'status' : constants.API_SUCCESS, 'message' : 'logged in successfully', 'data':data}, status= status.HTTP_200_OK)
 
+@api_view(['GET'])
+@authentication_classes([JWTAuthentication])
+def logout(request):
+    user = request.user
+    user.jwt_secret = uuid.uuid4()
+    user.save()
+    return Response({'status' : constants.API_SUCCESS, 'message': "logged out"}, status=status.HTTP_200_OK)
 
+@api_view(['GET'])
+@authentication_classes([JWTAuthentication])
+def test_auth(request):
+    user = request.user
+    return  Response({'status' : constants.API_SUCCESS, 'data': user.email}, status= status.HTTP_200_OK)
