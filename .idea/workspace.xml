@@ -4,8 +4,6 @@
     <list default="true" id="00065e01-6760-4b7f-b64f-7a8a84cf14dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/app/resturants/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/resturants/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/resturants/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/resturants/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resturant_locator/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/resturant_locator/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resturant_locator/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/resturant_locator/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,26 +28,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="49" />
+          <entry key="py" value="52" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="49" />
+          <entry key="Python" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="3662" />
+          <entry key="py" value="4682" />
           <entry key="txt" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="52" />
-          <entry key="Python" value="3662" />
+          <entry key="Python" value="4682" />
         </counts>
       </usages-collector>
     </session>
@@ -75,10 +73,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/resturants/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+            <state>
+              <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
                 <marker date="1536603742727" expanded="true" signature="102:385" ph="..." />
                 <marker date="1536603742727" expanded="true" signature="417:422" ph="..." />
               </folding>
@@ -101,11 +98,38 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/resturants/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
+            <state relative-caret-position="236">
+              <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
-                <marker date="1536607965598" expanded="true" signature="499:1172" ph="..." />
+                <element signature="e#0#28#0" expanded="true" />
+                <marker date="1536612381236" expanded="true" signature="661:2109" ph="..." />
+                <marker date="1536612381236" expanded="true" signature="2222:2227" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/resturants/serializers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+                <marker date="1536611563036" expanded="true" signature="181:186" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/accounts/serializers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" selection-end-line="1" selection-end-column="54" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+                <marker date="1536582329814" expanded="true" signature="118:123" ph="..." />
               </folding>
             </state>
           </provider>
@@ -115,7 +139,7 @@
         <entry file="file://$PROJECT_DIR$/app/resturants/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+              <caret line="5" column="76" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -143,15 +167,6 @@
               <folding>
                 <element signature="e#318#333#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements/base.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -209,9 +224,10 @@
         <option value="$PROJECT_DIR$/app/resturants/models.py" />
         <option value="$PROJECT_DIR$/app/resturants/data/__init__.py" />
         <option value="$PROJECT_DIR$/app/resturants/data/data.py" />
-        <option value="$PROJECT_DIR$/app/resturants/urls.py" />
         <option value="$PROJECT_DIR$/resturant_locator/urls.py" />
         <option value="$PROJECT_DIR$/resturant_locator/settings.py" />
+        <option value="$PROJECT_DIR$/app/resturants/serializers.py" />
+        <option value="$PROJECT_DIR$/app/resturants/urls.py" />
         <option value="$PROJECT_DIR$/app/resturants/views.py" />
       </list>
     </option>
@@ -254,13 +270,6 @@
               <item name="resturant_locator" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="resturants" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="resturant_locator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="resturant_locator" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="resturants" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="resturant_locator" type="b2602c69:ProjectViewProjectNode" />
@@ -484,17 +493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/accounts/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <marker date="1536582329814" expanded="true" signature="118:123" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/hotel/lib/python3.6/site-packages/rest_framework_jwt/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="31">
@@ -546,16 +544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resturant_locator/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
-          <folding>
-            <element signature="e#651#683#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resturant_locator/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -566,30 +554,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/resturants/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/resturants/data/data.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/resturants/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <marker date="1536603742727" expanded="true" signature="102:385" ph="..." />
-            <marker date="1536603742727" expanded="true" signature="417:422" ph="..." />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/accounts/views.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -605,13 +571,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/accounts/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" selection-end-line="1" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <marker date="1536582329814" expanded="true" signature="118:123" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/resturants/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
+          <folding>
+            <marker date="1536603742727" expanded="true" signature="102:385" ph="..." />
+            <marker date="1536603742727" expanded="true" signature="417:422" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resturant_locator/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+          <folding>
+            <element signature="e#651#683#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/resturants/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <marker date="1536611563036" expanded="true" signature="181:186" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/resturants/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="76" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/resturants/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
+        <state relative-caret-position="236">
+          <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1536607965598" expanded="true" signature="499:1172" ph="..." />
+            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1536612381236" expanded="true" signature="661:2109" ph="..." />
+            <marker date="1536612381236" expanded="true" signature="2222:2227" ph="..." />
           </folding>
         </state>
       </provider>
