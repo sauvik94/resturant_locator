@@ -102,9 +102,7 @@ def login(request):
     user = User.objects.get(email=data['email'])
     user.jwt_secret = uuid.uuid4()
     user.save()
-    print(1)
     jwt = str(get_jwt(request=request, user=user))
-    print(jwt)
     data = {'user_id': user.user_id, 'jwt': jwt}
     return Response({'status' : constants.API_SUCCESS, 'message' : 'logged in successfully', 'data':data}, status= status.HTTP_200_OK)
 
