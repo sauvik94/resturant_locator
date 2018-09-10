@@ -34,7 +34,7 @@ def update_user(data):
         user = User.objects.create(email=data['email'])
 
     user_serializer_data = {
-        'first_name': data['email'] if not is_empty(dict=data, key='first_name') else user.first_name,
+        'first_name': data['first_name'] if not is_empty(dict=data, key='first_name') else user.first_name,
         'last_name': data['last_name'] if not is_empty(dict=data, key='last_name') else user.last_name,
         'email': data['email'] if not is_empty(dict=data, key='email') else user.email,
         'password': data['password'] if not is_empty(dict=data, key='password') else user.password,
@@ -68,4 +68,35 @@ def signup(request):
 
     return Response({'status': constants.API_SUCCESS, 'message': 'Successfully registered new user'},
                     status=status.HTTP_201_CREATED)
+
+
+def is_valid_login_request(data):
+    if data is None or not data:
+        return False,"payload can not be empty"
+    mandatory_fields = APIMandatoryFieldList.get_mandatory_field_list(key='login')
+    is_missing_param, message =  is_missing_param_in_request(dict=data, key_list=mandatory_fields)
+    if is_missing_param:
+        return False, message
+    email = data['email']
+    try:
+        user = User.objects.get(email=email)
+        if data['password'] != user.password:
+            return False, "Wrong credentials given"
+    except User.DoesNotExist:
+        return False, "The email {0} is not registered yet".format(email)
+    return  True, None
+
+
+@api_view(['POST'])
+@permission_classes((AllowAny,))
+@authentication_classes([])
+def login(request):
+    data = request.data
+    is_valid_request, message = is_valid_login_request(data=data)
+    print(is_valid_request)
+    if not is_valid_request:
+        return  Response({'status': constants.API_ERROR, 'message' : message}, status = status.HTTP_400_BAD_REQUEST)
+    return Response({'status' : constants.API_SUCCESS, 'message' : 'logged in successfully'}, status= status.HTTP_200_OK)
+
+
 
