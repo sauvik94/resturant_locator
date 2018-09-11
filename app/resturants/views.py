@@ -1,7 +1,3 @@
-from _decimal import Decimal
-from cmath import sqrt
-
-from django.shortcuts import render
 from rest_framework import status
 from rest_framework.decorators import api_view, permission_classes, authentication_classes
 from rest_framework.permissions import AllowAny

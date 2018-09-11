@@ -43,30 +43,6 @@ def is_missing_param_in_request(dict, key_list):
     return False, None
 
 
-def validate_object_with_serializer_data(obj, dict):
-    for key in dict.keys():
-        val = getattr(obj, key)
-        try:
-            val = val.pk
-        except AttributeError:
-            pass
-        if val != dict[key]:
-            return False
-    return True
-
-def is_valid_uuid(uuid_string):
-    uuid_string = str(uuid_string)
-    string = ''
-    for x in (uuid_string.split('-')):
-        string += x
-    try:
-        val = UUID(string, version=4)
-    except ValueError:
-        return False
-
-    return val.hex == string
-
-
 def get_jwt_payload(request, user):
     payload = jwt_payload_handler(user)
     return payload
@@ -76,11 +52,5 @@ def get_jwt(request, user):
     payload = get_jwt_payload(request=request, user=user)
     return jwt_encode_handler(payload)
 
-
-def is_valid_user(user):
-    if user is None:
-        return False, 'User cannot be empty'
-    if type(user) is AnonymousUser:
-        return False, 'User cannot be AnonymousUser'
 
     return True, None
