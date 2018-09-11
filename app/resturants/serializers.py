@@ -19,6 +19,6 @@ class ResturantSerializer(ModelSerializer):
 class ResturantDisplaySerializer(ModelSerializer):
     class Meta:
         model = Resturant
-        fields = ('resturant_name')
+        fields =  ('resturant_name','resturant_id')
 
 

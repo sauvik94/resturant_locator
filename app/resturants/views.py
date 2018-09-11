@@ -34,12 +34,12 @@ def load_data(request):
         try:
             Resturant.objects.get(resturant_name=name, coordinate=coordinate)
         except Resturant.DoesNotExist:
-            resturant_serilizer_data = {'resturant_name': name, 'coordinate': coordinate.coordinate_id}
-            resturant_serilizer = ResturantSerializer(data=resturant_serilizer_data)
-            if resturant_serilizer.is_valid():
-                resturant_serilizer.save()
+            resturant_serializer_data = {'resturant_name': name, 'coordinate': coordinate.coordinate_id}
+            resturant_serializer = ResturantSerializer(data=resturant_serializer_data)
+            if resturant_serializer.is_valid():
+                resturant_serializer.save()
             else:
-                return Response({'status': constants.API_ERROR, 'message': resturant_serilizer_data.errors},
+                return Response({'status': constants.API_ERROR, 'message': resturant_serializer_data.errors},
                                 status=status.HTTP_400_BAD_REQUEST)
     return Response({'status': constants.API_SUCCESS, 'message' : 'resturant database created'},status = status.HTTP_201_CREATED)
 
@@ -49,23 +49,26 @@ def load_data(request):
 @authentication_classes([])
 def resturant_locator(request):
     data = request.data
-    latitude = Decimal(data['latitude'])
-    longitude = Decimal(data['longitude'])
+    latitude = float(data['latitude'])
+    longitude = float(data['longitude'])
     coordinates = Coordinate.objects.filter(latitude__gte=(latitude-5),latitude__lte=(latitude+5), longitude__gte=longitude-5,
                                             longitude__lte=longitude+5)
     coordinate_list = []
     for coordinate in coordinates:
-        a = sqrt(abs((latitude-coordinate.latitude)**2) + abs((longitude-coordinate.longitude)**2))
-        print(a)
-        print(type(a))
-        if sqrt(abs((latitude-coordinate.latitude)**2) + abs((longitude-coordinate.longitude)**2)) <= Decimal(5):
+        a = abs((abs(latitude-coordinate.latitude)**2) + abs(abs(longitude-coordinate.longitude)**2))
+        if (a**0.5) <= float(5):
             coordinate_list.append(coordinate.coordinate_id)
     if len(coordinate_list) == 0:
         return Response({'status': constants.API_ERROR, 'message': 'No resturant found'},
                         status=status.HTTP_204_NO_CONTENT)
     resturants = Resturant.objects.filter(coordinate_id__in = coordinate_list)
 
-    return Response({'status': constants.API_SUCCESS, 'message': 'Resturant found', 'data' : ResturantDisplaySerializer(resturants,
+    if 2>len((coordinate_list))>0:
+        message = " {0} Restaurant found".format(len(coordinate_list))
+    else:
+        message = " {0} Restaurants found".format(len(coordinate_list))
+
+    return Response({'status': constants.API_SUCCESS, 'message': message, 'data' : ResturantDisplaySerializer(resturants,
                                                                                                                  many=True).data},
                     status=status.HTTP_200_OK)
 

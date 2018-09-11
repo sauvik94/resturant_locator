@@ -4,8 +4,8 @@ from django.db import models
 
 class Coordinate(models.Model):
     coordinate_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    latitude = models.DecimalField(max_digits=20,decimal_places=10,default=Decimal('0.0000'))
-    longitude = models.DecimalField(max_digits=20, decimal_places=10, default=Decimal('0.0000'))
+    latitude = models.FloatField(null=True,blank=True)
+    longitude = models.FloatField(null=True,blank=True)
 
 
 class Resturant(models.Model):
