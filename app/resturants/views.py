@@ -6,6 +6,7 @@ from rest_framework.response import Response
 from app.resturants.data.data import resturant_list
 from app.resturants.models import Coordinate, Resturant
 from app.resturants.serializers import CoordinateSerializer, ResturantSerializer, ResturantDisplaySerializer
+from common.authentication.authentication import JWTAuthentication
 from constants import constants
 
 
@@ -41,8 +42,7 @@ def load_data(request):
 
 
 @api_view(['POST'])
-@permission_classes([AllowAny])
-@authentication_classes([])
+@authentication_classes([JWTAuthentication])
 def resturant_locator(request):
     data = request.data
     latitude = float(data['latitude'])
