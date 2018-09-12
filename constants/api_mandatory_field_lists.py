@@ -2,6 +2,7 @@ class APIMandatoryFieldList(object):
     field_list = {
         'signup': ['first_name','last_name','email', 'password'],
         'login': ['email', 'password'],
+        'resturant_locator' :['latitude', 'longitude'],
     }
 
     @staticmethod

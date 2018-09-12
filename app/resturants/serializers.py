@@ -17,6 +17,7 @@ class ResturantSerializer(ModelSerializer):
 
 
 class ResturantDisplaySerializer(ModelSerializer):
+    coordinate = CoordinateSerializer(many=False,required=True)
     class Meta:
         model = Resturant
         fields =  '__all__'

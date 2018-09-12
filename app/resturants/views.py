@@ -7,7 +7,9 @@ from app.resturants.data.data import resturant_list
 from app.resturants.models import Coordinate, Resturant
 from app.resturants.serializers import CoordinateSerializer, ResturantSerializer, ResturantDisplaySerializer
 from common.authentication.authentication import JWTAuthentication
+from common.util import is_missing_param_in_request
 from constants import constants
+from constants.api_mandatory_field_lists import APIMandatoryFieldList
 
 
 @api_view(['GET'])
@@ -41,10 +43,39 @@ def load_data(request):
     return Response({'status': constants.API_SUCCESS, 'message' : 'resturant database created'},status = status.HTTP_201_CREATED)
 
 
+def is_valid_resturant_request(data):
+    if data is None or not data:
+        return False,"payload can not be empty"
+    mandatory_fields = APIMandatoryFieldList.get_mandatory_field_list(key='resturant_locator')
+    is_missing_param, message =  is_missing_param_in_request(dict=data, key_list=mandatory_fields)
+    if is_missing_param:
+        return False, message
+    latitude = data['latitude']
+    longitude = data['longitude']
+    try:
+        latitude = float(latitude)
+    except ValueError:
+        return False, "latitude and longitude are float fields, format should be latitude : 00.0 and longitude : 00.0"
+    try:
+        longitude = float(longitude)
+    except ValueError:
+        return False, "latitude and longitude are float fields, format should be latitude : 00.0 and longitude : 00.0"
+    if latitude > 180 or latitude < -180:
+        return False, "latitude should be in range -180 to 180"
+    if longitude > 180 or longitude < -180:
+        return False, "longitude should be in range -180 to 180"
+
+    return True, None
+
+
 @api_view(['POST'])
 @authentication_classes([JWTAuthentication])
 def resturant_locator(request):
     data = request.data
+    is_valid_request, message = is_valid_resturant_request(data=data)
+    if not is_valid_request:
+        return Response({'status': constants.API_ERROR, 'message': message}, status=status.HTTP_400_BAD_REQUEST)
+
     latitude = float(data['latitude'])
     longitude = float(data['longitude'])
     coordinates = Coordinate.objects.filter(latitude__gte=(latitude-5),latitude__lte=(latitude+5), longitude__gte=longitude-5,
