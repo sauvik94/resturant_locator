@@ -1,4 +1,4 @@
-django use 2.1
+django=2.1
 psycopg2-binary
 django-rest-framework
 djangorestframework-jwt
